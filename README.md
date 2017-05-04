@@ -24,32 +24,9 @@ This cookbook will create a system service "ssserver", while the configuration f
 
 ### shadowsocks::default
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['shadowsocks']['server_port']</tt></td>
-    <td>Integer</td>
-    <td>shadowsocks server port</td>
-    <td><tt>8388</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['shadowsocks']['method']</tt></td>
-    <td>String</td>
-    <td>method</td>
-    <td><tt>aes-256-cfb</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['shadowsocks']['password']</tt></td>
-    <td>String</td>
-    <td>password</td>
-    <td><tt>pass</tt></td>
-  </tr>
-</table>
+- `node['shadowsocks']['server_port']` - Shadowsocks server port. Default is `8388`.
+- `node['shadowsocks']['method']` - Shadowsocks encrypt method. Default is `aes-256-cfb`.
+- `node['shadowsocks']['password']` - Shadowsocks password. Default is `pass`.
 
 ## Usage
 
